@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "org.vortex.zapi.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "PlayerMoveC2SPacketAccessor",
+    "ClientConnectionMixin",
+    "MinecraftAccessor",
+    "TitleScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

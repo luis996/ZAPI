@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "zapi",
+  "version": "${version}",
+  "name": "ZAPI",
+  "description": "Zen API",
+  "authors": [ "Vortex" ],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/zapi/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "org.vortex.zapi.client.ZapiClient"
+    ],
+    "main": [
+      "org.vortex.zapi.Zapi"
+    ]
+  },
+  "mixins": [
+    "zapi.mixins.json",
+    {
+      "config": "zapi.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "minecraftclientutilities": ">=1.0.1"
+  }
+}
